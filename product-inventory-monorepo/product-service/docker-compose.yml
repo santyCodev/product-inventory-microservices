@@ -1,0 +1,73 @@
+version: '3.8'
+services:
+  # Servicio de PostgreSQL
+  postgres-database:
+    image: postgres:15-alpine
+    container_name: inventory_postgres_db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: inventory_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - inventory_postgres_data:/var/lib/postgresql/data
+    restart: always
+    networks:
+      - inventory-network
+
+  # Servicio de Redis
+  redis:
+    image: redis:7-alpine
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - inventory-network
+
+  # Servicio de la aplicación Spring Boot
+  gestor-inventario-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "8080:8080"
+    environment:
+      # Configuración de la base de datos para Spring Boot
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-database:5432/inventory_db
+      SPRING_DATASOURCE_USERNAME: admin
+      SPRING_DATASOURCE_PASSWORD: password
+      # Configuración de Redis para Spring Boot
+      SPRING_DATA_REDIS_HOST: redis
+      SPRING_DATA_REDIS_PORT: 6379
+      # Nivel de logging para debug (opcional, pero útil)
+      LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_DATA_REDIS: DEBUG
+      LOGGING_LEVEL_IO_LETTUCE_CORE: DEBUG
+      LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_CACHE: DEBUG
+      LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_DATA_JPA: DEBUG
+      LOGGING_LEVEL_ORG_HIBERNATE: DEBUG
+      LOGGING_LEVEL_COM_ZAXZAX_HIKARICP: DEBUG
+      # Configuración JWT (para que la app funcione dentro del contenedor)
+      # Variables para JWT (puedes dejarlas aquí para dev/test, en prod usar secretos)
+      # APP_JWTSECRET: ${APP_JWTSECRET} # Tu secreto JWT, cargado desde .env si usas
+      # APP_JWTEXPIRATIONMS: ${APP_JWTEXPIRATIONMS} # Tiempo de expiración JWT
+      APP_JWTSECRET: SuperSecretKeyForJWTAuthenticationInMyInventoryAppThatShouldBeVeryLongAndComplexForProductionUse # ¡Repite tu JWT secret!
+      APP_JWTEXPIRATIONMS: 86400000
+    depends_on:
+      - postgres-database
+      - redis
+    networks:
+      - inventory-network
+
+# Definición de volúmenes para persistencia
+volumes:
+  inventory_postgres_data:
+  redis_data:
+
+# Definición de redes personalizadas para la comunicación entre servicios
+networks:
+  inventory-network:
+    driver: bridge # Tipo de red por defecto para Docker Compose
