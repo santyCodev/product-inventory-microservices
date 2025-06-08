@@ -1,9 +1,0 @@
-com\santicodev\productservice\client\CategoryServiceClient.class
-com\santicodev\productservice\config\RedisCacheConfig.class
-com\santicodev\productservice\infraestructure\controller\ProductController.class
-com\santicodev\productservice\application\service\ProductService.class
-com\santicodev\productservice\infraestructure\repository\ProductRepository.class
-com\santicodev\productservice\exception\handler\GlobalExceptionHandler.class
-com\santicodev\productservice\ProductServiceApplication.class
-com\santicodev\productservice\config\OpenApiConfig.class
-com\santicodev\productservice\domain\Product.class
