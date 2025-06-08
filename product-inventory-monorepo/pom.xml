@@ -74,6 +74,8 @@
 
     <modules>
         <module>common-domain-lib</module>
+        <module>auth-service</module>
+        <module>category-service</module>
         <module>product-service</module>
     </modules>
 

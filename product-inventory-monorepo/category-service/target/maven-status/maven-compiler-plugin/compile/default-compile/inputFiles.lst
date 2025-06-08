@@ -1,0 +1,7 @@
+F:\Data\Programacion\Proyectos\002_GestorInventarioProductos_Micro\product-inventory-microservices\product-inventory-monorepo\category-service\src\main\java\com\santicodev\categoryservice\application\service\CategoryService.java
+F:\Data\Programacion\Proyectos\002_GestorInventarioProductos_Micro\product-inventory-microservices\product-inventory-monorepo\category-service\src\main\java\com\santicodev\categoryservice\CategoryServiceApplication.java
+F:\Data\Programacion\Proyectos\002_GestorInventarioProductos_Micro\product-inventory-microservices\product-inventory-monorepo\category-service\src\main\java\com\santicodev\categoryservice\config\OpenApiConfig.java
+F:\Data\Programacion\Proyectos\002_GestorInventarioProductos_Micro\product-inventory-microservices\product-inventory-monorepo\category-service\src\main\java\com\santicodev\categoryservice\config\RedisCacheConfig.java
+F:\Data\Programacion\Proyectos\002_GestorInventarioProductos_Micro\product-inventory-microservices\product-inventory-monorepo\category-service\src\main\java\com\santicodev\categoryservice\domain\Category.java
+F:\Data\Programacion\Proyectos\002_GestorInventarioProductos_Micro\product-inventory-microservices\product-inventory-monorepo\category-service\src\main\java\com\santicodev\categoryservice\infraestructure\controller\CategoryController.java
+F:\Data\Programacion\Proyectos\002_GestorInventarioProductos_Micro\product-inventory-microservices\product-inventory-monorepo\category-service\src\main\java\com\santicodev\categoryservice\infraestructure\repository\CategoryRepository.java

@@ -1,0 +1,7 @@
+com\santicodev\categoryservice\config\OpenApiConfig.class
+com\santicodev\categoryservice\domain\Category.class
+com\santicodev\categoryservice\application\service\CategoryService.class
+com\santicodev\categoryservice\infraestructure\controller\CategoryController.class
+com\santicodev\categoryservice\infraestructure\repository\CategoryRepository.class
+com\santicodev\categoryservice\config\RedisCacheConfig.class
+com\santicodev\categoryservice\CategoryServiceApplication.class

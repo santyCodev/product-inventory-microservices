@@ -15,23 +15,6 @@
 	<name>Product Microservice</name>
 	<description>Product Management Microservice</description>
 
-	<url/>
-	<licenses>
-		<license/>
-	</licenses>
-	<developers>
-		<developer/>
-	</developers>
-	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
-	</scm>
-
-	<properties>
-	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>com.santicodev.gestorinventarioproductos</groupId>
@@ -137,6 +120,10 @@
 			<artifactId>testcontainers-redis</artifactId>
 			<version>1.6.4</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
 	</dependencies>
 

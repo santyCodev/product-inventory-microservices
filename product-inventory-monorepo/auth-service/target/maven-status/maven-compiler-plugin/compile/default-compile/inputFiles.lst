@@ -1,0 +1,13 @@
+F:\Data\Programacion\Proyectos\002_GestorInventarioProductos_Micro\product-inventory-microservices\product-inventory-monorepo\auth-service\src\main\java\com\santicodev\authservice\application\Service\UserDetailsImpl.java
+F:\Data\Programacion\Proyectos\002_GestorInventarioProductos_Micro\product-inventory-microservices\product-inventory-monorepo\auth-service\src\main\java\com\santicodev\authservice\application\Service\UserDetailsServiceImpl.java
+F:\Data\Programacion\Proyectos\002_GestorInventarioProductos_Micro\product-inventory-microservices\product-inventory-monorepo\auth-service\src\main\java\com\santicodev\authservice\config\OpenApiConfig.java
+F:\Data\Programacion\Proyectos\002_GestorInventarioProductos_Micro\product-inventory-microservices\product-inventory-monorepo\auth-service\src\main\java\com\santicodev\authservice\config\RedisCacheConfig.java
+F:\Data\Programacion\Proyectos\002_GestorInventarioProductos_Micro\product-inventory-microservices\product-inventory-monorepo\auth-service\src\main\java\com\santicodev\authservice\config\SecurityConfig.java
+F:\Data\Programacion\Proyectos\002_GestorInventarioProductos_Micro\product-inventory-microservices\product-inventory-monorepo\auth-service\src\main\java\com\santicodev\authservice\data\RoleDataLoader.java
+F:\Data\Programacion\Proyectos\002_GestorInventarioProductos_Micro\product-inventory-microservices\product-inventory-monorepo\auth-service\src\main\java\com\santicodev\authservice\domain\Role.java
+F:\Data\Programacion\Proyectos\002_GestorInventarioProductos_Micro\product-inventory-microservices\product-inventory-monorepo\auth-service\src\main\java\com\santicodev\authservice\domain\User.java
+F:\Data\Programacion\Proyectos\002_GestorInventarioProductos_Micro\product-inventory-microservices\product-inventory-monorepo\auth-service\src\main\java\com\santicodev\authservice\infraestructure\controller\AuthController.java
+F:\Data\Programacion\Proyectos\002_GestorInventarioProductos_Micro\product-inventory-microservices\product-inventory-monorepo\auth-service\src\main\java\com\santicodev\authservice\infraestructure\repository\RoleRepository.java
+F:\Data\Programacion\Proyectos\002_GestorInventarioProductos_Micro\product-inventory-microservices\product-inventory-monorepo\auth-service\src\main\java\com\santicodev\authservice\infraestructure\repository\UserRepository.java
+F:\Data\Programacion\Proyectos\002_GestorInventarioProductos_Micro\product-inventory-microservices\product-inventory-monorepo\auth-service\src\main\java\com\santicodev\authservice\jwt\JwtAuthenticationFilter.java
+F:\Data\Programacion\Proyectos\002_GestorInventarioProductos_Micro\product-inventory-microservices\product-inventory-monorepo\auth-service\src\main\java\com\santicodev\authservice\jwt\JwtUtils.java
